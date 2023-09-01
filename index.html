@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="player">
+    <div class="player-box">
+      <div class="player-media">
+        <img src="https://s3.cloud.cmctelecom.vn/nhattao1/2017/03/7923586_cd459ef7f0668eb9b0be6199b3e75019.jpg" alt="" class="player-image">
+      </div>
+      <div class="player-progress">
+        <input type="range" name="" id="progress-bar" class="bar" min="0" max="" value="0">
+        <audio src="./file/Khuôn mặt đáng thương - Sơn Tùng MTP.mp3" id="song"  ></audio>
+      </div>
+      <div class="player-number">
+        <span class="player-current">00:00</span>
+        <span class="player-duration">00:00</span>
+      </div>
+      <div class="player-name"></div>
+    </div>
+    <div class="player-tool">
+      <div class="player-icon">
+        <i class="fa fa-backward player-prev"></i>
+      </div>
+      <div class="player-icon">
+        <i class="fa fa-play player-play"></i>
+      </div>
+      <div class="player-icon">
+        <i class="fa fa-forward player-next"></i>
+      </div>
+
+    </div>
+  </div>
+  
+  <script src="index.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,144 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  cursor: zoom-in;
+}
+
+a {
+  text-decoration: none;
+}
+
+input, select, textarea, button {
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+input:focus {
+  background-color: white;
+  border-color: #fa4853;
+  transition: all 0.25s linear;
+}
+
+button {
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.player {
+  padding: 10px;
+  width: 350px;
+  margin: 0 auto;
+}
+.player-box {
+  padding: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 20px;
+}
+.player-name {
+  width: 100%;
+  line-height: 2;
+  height: 30px;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+.player-media {
+  width: 300px;
+  height: 300px;
+  border-radius: 300px;
+  object-fit: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.player-image {
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.player-image.is-playing {
+  animation: rotate 10s infinite forwards linear;
+}
+.player-progress {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.player-number {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.player-tool {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.player-icon {
+  cursor: pointer;
+  font-size: 20px;
+  color: #2b48d9;
+  width: 45px;
+  height: 45px;
+  border-radius: 100rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-left: 20px;
+}
+.player-icon:hover {
+  cursor: pointer;
+}
+.player-icon:active {
+  transform: translateY(4px);
+  transition: 0.25s linear;
+  background-color: #2b48d9;
+  color: white;
+}
+.bar {
+  width: 80%;
+}
+
+/*# sourceMappingURL=style.css.map */
